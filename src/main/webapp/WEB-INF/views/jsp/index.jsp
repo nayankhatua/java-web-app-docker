@@ -1,39 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@nayankhatua 
-Learn Git and GitHub without any code!
-Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
-
-
-nayankhatua
-/
-java-web-app-docker
-forked from MithunKhatuaDevOps/java-web-app-docker
-0
-0621
-Code
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-java-web-app-docker/src/main/webapp/WEB-INF/views/jsp/index.jsp
-@nayankhatua
-nayankhatua Update index.jsp
-Latest commit 99e6f74 9 minutes ago
- History
- 2 contributors
-@devopstrainingbanglore@nayankhatua
-Executable File  63 lines (52 sloc)  1.49 KB
-  
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
@@ -97,15 +61,3 @@ Executable File  63 lines (52 sloc)  1.49 KB
 
 </body>
 </html>
-© 2020 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
