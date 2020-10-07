@@ -1,31 +1,32 @@
+# Replication Controller for webapp
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: rc
-  labels:
-    app: webapp
-    type: frontend
+  name: webapp
 spec:
+  replicas: 1
+  selector:
+    app: webapp
   template:
     metadata:
-      name: webapp
       labels:
-        env: Prod
+        app: webapp
     spec:
       containers:
-      - name: nayankhatua/java-web-app-docker
-        image: webapp
-  replicas: 3
+      - image: nayankhatua/java-web-app-docker
+        name: webapp
+        ports:
+        - containerPort: 8080  
 ---
+# Node Port Service For webapp
 apiVersion: v1
 kind: Service
 metadata:
-  name: webapp-service
+  name: webapp
 spec:
   type: NodePort
   ports:
-    - port: 8080
+    - port: 12345
       targetPort: 8080
-      nodePort: 12345
   selector:
-    env: Prod
+    app: webapp
