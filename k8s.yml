@@ -1,7 +1,7 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: v1
+kind: ReplicationController
 metadata:
-  name: rs
+  name: rc
   labels:
     app: webapp
     type: frontend
@@ -11,15 +11,11 @@ spec:
       name: webapp
       labels:
         env: Prod
-        
     spec:
       containers:
       - name: nayankhatua/java-web-app-docker
         image: webapp
   replicas: 3
-  selector:
-    matchLabels:
-      env: Prod
 ---
 apiVersion: v1
 kind: Service
