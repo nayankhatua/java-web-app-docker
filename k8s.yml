@@ -13,7 +13,7 @@ spec:
         app: webapp
     spec:
       containers:
-      - image: nayankhatua/java-web-app-docker
+      - image: nayankhatua/java-web-app-docker:36
         name: webapp
         ports:
         - containerPort: 8080  
