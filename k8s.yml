@@ -13,7 +13,7 @@ spec:
         app: webapp
     spec:
       containers:
-      - image: nayankhatua/java-web-app-docker:36
+      - image: myjenkinsacr.azurecr.io/java-web-app-docker
         name: webapp
         ports:
         - containerPort: 8080  
