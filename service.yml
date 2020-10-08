@@ -7,7 +7,7 @@ spec:
   type: LoadBalancer
   ports:
     - port: 80
-      targetPort: 80801
+      targetPort: 808012
       name: http
     - name: "https"
       port: 443
