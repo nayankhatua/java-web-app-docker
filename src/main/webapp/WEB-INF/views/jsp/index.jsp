@@ -40,7 +40,7 @@
 
 	<div class="row">
 		<div class="col-md-8">
-			<h2>Welcome To Nayan Khatua,Hyderbad.</h2>
+			<h2>Welcome To Dipen Khatua,Hyderbad.</h2>
 			<h3>Mob: +91-88885285000</h3>
 		</div>	
 	</div>
@@ -48,7 +48,7 @@
 
 	<hr>
 	<footer>
-		<p>&copy; Nayan Khatua 2019</p>
+		<p>&copy; Dipen Khatua 2019</p>
 	</footer>
 </div>
 
