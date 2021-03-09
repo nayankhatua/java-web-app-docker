@@ -2,19 +2,19 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: webapp
+  name: webapp1
 spec:
   replicas: 2
   selector:
-    app: webapp
+    app: webapp1
   template:
     metadata:
       labels:
-        app: webapp
+        app: webapp1
     spec:
       containers:
       - image: myjenkinsacr.azurecr.io/java-web-app-docker:83
-        name: webapp
+        name: webapp1
         ports:
         - containerPort: 8080  
 ---
@@ -22,11 +22,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: webapp
+  name: webapp1
 spec:
   type: LoadBalancer
   ports:
     - port: 80
       targetPort: 8080
   selector:
-    app: webapp
+    app: webapp1
